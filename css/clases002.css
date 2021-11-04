@@ -14,6 +14,7 @@ body{
     /* background: var(--hospital-green); */
     font-family: 'Quicksand', sans-serif;
     margin: 0;
+    background-image: url('../assets01/icons/icon_close.png');
 }
 .login{
     width: 100%;
@@ -25,6 +26,11 @@ body{
     display: grid;
     grid-template-rows:auto 1fr auto ;
     width: 350px;
+    justify-items: center;
+    background: transparent;
+    background-color:rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .logo{
     width: 150px;
@@ -38,7 +44,7 @@ body{
     text-align: center;
 }
 .sub-title{
-    color: cyan;
+    color: rgb(38, 41, 41);
     font-size: var(--md);
     font-weight: 300;
     margin-top: 0;
@@ -54,15 +60,28 @@ body{
     font-weight: bold;
     margin-bottom: 4px;
 }
-.input{
+.email-image{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
     background-color: var(--text-input-field);
-    border: none;
-    border-radius: 8px;
-    height: 30px;
-    font-size: var(--md);
-    padding: 6px;
-    margin-bottom: 12px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26px;
+}
+.email-image img{
+    width: 85px;
+}
+.resend{
+    font-size: var(--ms);
+}
+.resend samp{
+    color: var(--very-light-pink);
+}
+.resend a{
+    color: var(--hospital-green);
+    text-decoration: none;
 }
 .primary-button{
     background-color: var(--hospital-green);
@@ -70,7 +89,7 @@ body{
     border-radius: 5px;
     color: #FFFFFF;
     padding: 10px;
-    width: 90%;
+    width: 95%;
     font-size: var(--md);
     font-weight: bold;
     cursor: pointer;
